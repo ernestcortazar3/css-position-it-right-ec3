@@ -2,12 +2,45 @@
 }
 
 .robot-face-shape {
+  width: 500px;
+  height: 500px;
+  background: silver;
+  border: 10px solid grey;
+  border-radius: 20px;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
 }
 
 .robot-eye-left {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+
+  height: 150px;
+  background: black;
+  --c: white;
+
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 35px inset var(--c);
+  border-image: conic-gradient(var(--c) 0 0) 50% / calc(50% - 15px);
+  clip-path: circle(); /* remove this if you don't want a rounded shape */
+  rotate: 45deg;
 }
 
 .robot-eye-right {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  height: 150px;
+  background: black;
+  --c: white;
+
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 35px inset var(--c);
+  border-image: conic-gradient(var(--c) 0 0) 50% / calc(50% - 15px);
+  clip-path: circle(); /* remove this if you don't want a rounded shape */
+  rotate: 45deg;
 }
 
 .robot-ear-left {
