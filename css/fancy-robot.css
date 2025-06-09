@@ -1,4 +1,8 @@
 .robot-container {
+  width: 3000px;
+  height: 1000px;
+  display: flex;
+  background-color: pink;
 }
 
 .robot-face-shape {
@@ -7,20 +11,18 @@
   background: silver;
   border: 10px solid grey;
   border-radius: 20px;
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
+  position: fixed;
+  top: 300px;
+  left: 500px;
 }
 
 .robot-eye-left {
   position: absolute;
   top: 50px;
   left: 80px;
-
   height: 150px;
   background: black;
   --c: white;
-
   aspect-ratio: 1;
   box-shadow: 0 0 0 35px inset var(--c);
   border-image: conic-gradient(var(--c) 0 0) 50% / calc(50% - 15px);
@@ -35,7 +37,6 @@
   height: 150px;
   background: black;
   --c: white;
-
   aspect-ratio: 1;
   box-shadow: 0 0 0 35px inset var(--c);
   border-image: conic-gradient(var(--c) 0 0) 50% / calc(50% - 15px);
@@ -44,9 +45,25 @@
 }
 
 .robot-ear-left {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  background: silver;
+  border-radius: 50%;
+  box-shadow: inset 10px -10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .robot-ear-right {
+  position: fixed;
+  top: 300px;
+  left: 100px;
+  width: 200px;
+  height: 150px;
+  background: silver;
+  border-radius: 50%;
+  box-shadow: inset 10px -10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .robot-nose {
